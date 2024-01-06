@@ -1,0 +1,19 @@
+xinput set-prop "ELAN076E:00 04F3:3245 Touchpad" "Synaptics Tap Action" 2 3 1 0 1 3 2
+xinput set-prop "ELAN076E:00 04F3:3245 Touchpad" "Synaptics Tap Durations" 100 100 100
+#touchpad Accel Speed
+#xinput set-prop 12 325 100
+#touchpad Coordinate Transformation Matrix
+#xinput set-prop 12 181  0.3 0 0 0 0.3 0 0 0 1
+#xinput set-prop 9 330 -0.5
+synclient VertScrollDelta=400
+synclient MinSpeed=2
+synclient MaxSpeed=3
+
+syndaemon -i 1 -t -d
+xrandr --output eDP-1 --mode "1368x768" --brightness 0.3
+xset dpms 0 0 0
+xset s off
+ibus-daemon --xim -d &
+emacs -fs -fg white -bg black &
+firefox &
+#microsoft-edge &

@@ -1,0 +1,74 @@
+irm https://massgrave.dev/get | iex
+wnsszswjilbgbjdb
+
+任务栏置顶
+HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\StuckRects3
+setting FE下03改01
+
+firefox alt
+about:config
+ui.key.menuAccessKeyFocuses false
+
+点击Win+R键，在输入框键入regedit，打开注册表
+HKEY_LOCAL_MACHINE -> 
+System -> 
+CurrentControlSet -> 
+Control -> 
+KeyBoard Layout
+右键菜单，然后选择New -> Binary value
+重命名New Value #1 -> Scancode Map
+右键菜单Scancode Map -> Modify
+输入如下值，保存
+0000 00 00 00 00 00 00 00 00
+0008 03 00 00 00 1D 00 3A 00
+0010 3A 00 1D 00 00 00 00 00
+0018
+
+双系统时间
+HKEY_LOCAL_MACHINE -> 
+System -> 
+CurrentControlSet -> 
+Control ->
+TimeZoneInformation
+添加一项类型为REG_DWORD的键值，命名为RealTimeIsUniversal，值为1
+
+C:\Users\r\AppData\Roaming\pip\pip.ini
+[global]
+timeout = 6000
+index-url = https://pypi.doubanio.com/simple/
+trusted-host = pypi.doubanio.com
+
+131.253.33.219 edge.microsoft.com
+131.253.33.219 msedgeextensions.sf.tlu.dl.delivery.mp.microsoft.com
+
+Office2021官方镜像：
+https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/en-us/ProPlus2021Retail.img
+中文语言包：
+https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=languagepack&language=zh-cn&platform=x64&source=O16LAP&version=O16GA
+
+edge不能更新
+控制面板主页
+点击“网络和Internet”进入，点击“网络和共享中心”。
+点击“更改适配器设置”进入，右键点击当前网络连接选择“属性”进入。
+选择“Internet协议版本4（TPC/IPv4）”,点击“属性”。
+选择“使用下面的DNS服务器地址”，在首选DNS服务器中输入“4221”，在备用DNS服务器中输入“4222”，点击“确定”即可。
+
+wsl --list --online
+wsl --install -d Debian
+wsl --unregister Debian
+ubuntu2204.exe config --default-user r
+
+https://api.wemod.com/client/download
+https://storage-cdn.wemod.com/app/releases/stable/WeMod-8.2.0.exe
+https://api.wemod.com/client/channels/stable/releases/latest
+
+安装hyper-v  .bat
+pushd "%~dp0"
+dir /b %SystemRoot%\servicing\Packages\*Hyper-V*.mum >hv.txt
+for /f %%i in ('findstr /i . hv.txt 2^>nul') do dism /online /norestart /add-package:"%SystemRoot%\servicing\Packages\%%i"
+del hv.txt
+Dism /online /enable-feature /featurename:Microsoft-Hyper-V -All /LimitAccess /ALL
+Pause
+
+wsl --set-version Ubuntu 1
+bcdedit /set hypervisorlaunchtype off
