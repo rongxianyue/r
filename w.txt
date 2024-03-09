@@ -71,3 +71,8 @@ Pause
 
 wsl --set-version Ubuntu 1
 bcdedit /set hypervisorlaunchtype off
+
+war3 roc tft
+RIX1L2-KBU5-JNVE94-ZQ3H-NCWSVK
+VKKRWD 6V8W 2KPYCX YVE4 YBX7MZ
+
