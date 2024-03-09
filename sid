@@ -91,7 +91,7 @@ sudo sysctl -p
 sudo chmod 755 /usr/share/fonts/yahei/*
 sudo fc-cache -fv
 echo $XDG_SESSION_TYPE
-ssh-keygen -t rsa -b 4096 -C "rongxianyue@outlook.com"
+ssh-keygen -t rsa -b 4096
 
 gpg --full-generate-key
 gpg --list-secret-keys --keyid-format=long
