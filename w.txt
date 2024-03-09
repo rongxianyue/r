@@ -1,5 +1,4 @@
 irm https://massgrave.dev/get | iex
-wnsszswjilbgbjdb
 
 任务栏置顶
 HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\StuckRects3
