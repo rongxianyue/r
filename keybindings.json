@@ -1,0 +1,378 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "ctrl+o",
+        "command": "-lineBreakInsert",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "emacs-mcx.forwardChar",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+f",
+        "command": "-emacs-mcx.forwardChar",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "emacs-mcx.backwardChar",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+b",
+        "command": "-emacs-mcx.backwardChar",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+i",
+        "command": "emacs-mcx.previousLine",
+        "when": "editorTextFocus && !suggestWidgetVisible"
+    },
+    {
+        "key": "ctrl+p",
+        "command": "-emacs-mcx.previousLine",
+        "when": "editorTextFocus && !suggestWidgetVisible"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "emacs-mcx.nextLine",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+n",
+        "command": "-emacs-mcx.nextLine",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+f",
+        "command": "emacs-mcx.scrollUpCommand",
+        "when": "editorTextFocus && !suggestWidgetVisible"
+    },
+    {
+        "key": "ctrl+v",
+        "command": "-emacs-mcx.scrollUpCommand",
+        "when": "editorTextFocus && !suggestWidgetVisible"
+    },
+    {
+        "key": "ctrl+b",
+        "command": "emacs-mcx.scrollDownCommand",
+        "when": "editorTextFocus && !config.emacs-mcx.useMetaPrefixMacCmd && !suggestWidgetVisible"
+    },
+    {
+        "key": "alt+v",
+        "command": "-emacs-mcx.scrollDownCommand",
+        "when": "editorTextFocus && !config.emacs-mcx.useMetaPrefixMacCmd && !suggestWidgetVisible"
+    },
+    {
+        "key": "ctrl+b",
+        "command": "emacs-mcx.scrollDownCommand",
+        "when": "config.emacs-mcx.useMetaPrefixMacCmd && editorTextFocus && !suggestWidgetVisible"
+    },
+    {
+        "key": "alt+v",
+        "command": "-emacs-mcx.scrollDownCommand",
+        "when": "config.emacs-mcx.useMetaPrefixMacCmd && editorTextFocus && !suggestWidgetVisible"
+    },
+    {
+        "key": "alt+l",
+        "command": "emacs-mcx.forwardWord",
+        "when": "editorTextFocus && !config.emacs-mcx.useMetaPrefixMacCmd"
+    },
+    {
+        "key": "alt+f",
+        "command": "-emacs-mcx.forwardWord",
+        "when": "editorTextFocus && !config.emacs-mcx.useMetaPrefixMacCmd"
+    },
+    {
+        "key": "alt+l",
+        "command": "emacs-mcx.forwardWord",
+        "when": "config.emacs-mcx.useMetaPrefixMacCmd && editorTextFocus"
+    },
+    {
+        "key": "alt+f",
+        "command": "-emacs-mcx.forwardWord",
+        "when": "config.emacs-mcx.useMetaPrefixMacCmd && editorTextFocus"
+    },
+    {
+        "key": "alt+j",
+        "command": "emacs-mcx.backwardWord",
+        "when": "editorTextFocus && !config.emacs-mcx.useMetaPrefixMacCmd"
+    },
+    {
+        "key": "alt+b",
+        "command": "-emacs-mcx.backwardWord",
+        "when": "editorTextFocus && !config.emacs-mcx.useMetaPrefixMacCmd"
+    },
+    {
+        "key": "alt+j",
+        "command": "emacs-mcx.backwardWord",
+        "when": "config.emacs-mcx.useMetaPrefixMacCmd && editorTextFocus"
+    },
+    {
+        "key": "alt+b",
+        "command": "-emacs-mcx.backwardWord",
+        "when": "config.emacs-mcx.useMetaPrefixMacCmd && editorTextFocus"
+    },
+    {
+        "key": "ctrl+w",
+        "command": "emacs-mcx.copyRegion",
+        "when": "editorTextFocus && !config.emacs-mcx.useMetaPrefixMacCmd"
+    },
+    {
+        "key": "alt+w",
+        "command": "-emacs-mcx.copyRegion",
+        "when": "editorTextFocus && !config.emacs-mcx.useMetaPrefixMacCmd"
+    },
+    {
+        "key": "ctrl+w",
+        "command": "emacs-mcx.copyRegion",
+        "when": "config.emacs-mcx.useMetaPrefixMacCmd && editorTextFocus"
+    },
+    {
+        "key": "alt+w",
+        "command": "-emacs-mcx.copyRegion",
+        "when": "config.emacs-mcx.useMetaPrefixMacCmd && editorTextFocus"
+    },
+    {
+        "key": "alt+w",
+        "command": "emacs-mcx.killRegion",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+w",
+        "command": "-emacs-mcx.killRegion",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+v",
+        "command": "emacs-mcx.yank",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+y",
+        "command": "-emacs-mcx.yank",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+v",
+        "command": "emacs-mcx.yank",
+        "when": "emacs-mcx.minibufferReading"
+    },
+    {
+        "key": "ctrl+y",
+        "command": "-emacs-mcx.yank",
+        "when": "emacs-mcx.minibufferReading"
+    },
+    {
+        "key": "alt+v",
+        "command": "emacs-mcx.yank-pop",
+        "when": "editorTextFocus && !config.emacs-mcx.useMetaPrefixMacCmd && !editorReadonly"
+    },
+    {
+        "key": "alt+y",
+        "command": "-emacs-mcx.yank-pop",
+        "when": "editorTextFocus && !config.emacs-mcx.useMetaPrefixMacCmd && !editorReadonly"
+    },
+    {
+        "key": "alt+v",
+        "command": "emacs-mcx.yank-pop",
+        "when": "config.emacs-mcx.useMetaPrefixMacCmd && editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "alt+y",
+        "command": "-emacs-mcx.yank-pop",
+        "when": "config.emacs-mcx.useMetaPrefixMacCmd && editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+p",
+        "command": "emacs-mcx.isearchBackward",
+        "when": "!findInputFocussed"
+    },
+    {
+        "key": "ctrl+r",
+        "command": "-emacs-mcx.isearchBackward",
+        "when": "!findInputFocussed"
+    },
+    {
+        "key": "ctrl+n",
+        "command": "emacs-mcx.isearchForward",
+        "when": "!findInputFocussed"
+    },
+    {
+        "key": "ctrl+s",
+        "command": "-emacs-mcx.isearchForward",
+        "when": "!findInputFocussed"
+    },
+    {
+        "key": "ctrl+r",
+        "command": "emacs-mcx.recenterTopBottom",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "-emacs-mcx.recenterTopBottom",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+backspace",
+        "command": "emacs-mcx.killWholeLine",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+backspace",
+        "command": "-emacs-mcx.killWholeLine",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+delete",
+        "command": "emacs-mcx.killLine",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "-emacs-mcx.killLine",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "alt+oem_period",
+        "command": "workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup",
+        "when": "!activeEditorGroupEmpty"
+    },
+    {
+        "key": "ctrl+tab",
+        "command": "-workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup",
+        "when": "!activeEditorGroupEmpty"
+    },
+    {
+        "key": "alt+oem_period",
+        "command": "workbench.action.quickOpenNavigateNextInEditorPicker",
+        "when": "inEditorsPicker && inQuickOpen"
+    },
+    {
+        "key": "ctrl+tab",
+        "command": "-workbench.action.quickOpenNavigateNextInEditorPicker",
+        "when": "inEditorsPicker && inQuickOpen"
+    },
+    {
+        "key": "alt+oem_comma",
+        "command": "workbench.action.quickOpenLeastRecentlyUsedEditorInGroup",
+        "when": "!activeEditorGroupEmpty"
+    },
+    {
+        "key": "ctrl+shift+tab",
+        "command": "-workbench.action.quickOpenLeastRecentlyUsedEditorInGroup",
+        "when": "!activeEditorGroupEmpty"
+    },
+    {
+        "key": "alt+oem_comma",
+        "command": "workbench.action.quickOpenNavigatePreviousInEditorPicker",
+        "when": "inEditorsPicker && inQuickOpen"
+    },
+    {
+        "key": "ctrl+shift+tab",
+        "command": "-workbench.action.quickOpenNavigatePreviousInEditorPicker",
+        "when": "inEditorsPicker && inQuickOpen"
+    },
+    {
+        "key": "alt+k",
+        "command": "emacs-mcx.forwardParagraph",
+        "when": "editorTextFocus && !config.emacs-mcx.useMetaPrefixMacCmd && !suggestWidgetVisible"
+    },
+    {
+        "key": "shift+alt+oem_6",
+        "command": "-emacs-mcx.forwardParagraph",
+        "when": "editorTextFocus && !config.emacs-mcx.useMetaPrefixMacCmd && !suggestWidgetVisible"
+    },
+    {
+        "key": "alt+k",
+        "command": "emacs-mcx.forwardParagraph",
+        "when": "config.emacs-mcx.useMetaPrefixMacCmd && editorTextFocus && !suggestWidgetVisible"
+    },
+    {
+        "key": "shift+alt+oem_6",
+        "command": "-emacs-mcx.forwardParagraph",
+        "when": "config.emacs-mcx.useMetaPrefixMacCmd && editorTextFocus && !suggestWidgetVisible"
+    },
+    {
+        "key": "alt+i",
+        "command": "emacs-mcx.backwardParagraph",
+        "when": "editorTextFocus && !config.emacs-mcx.useMetaPrefixMacCmd && !suggestWidgetVisible"
+    },
+    {
+        "key": "shift+alt+oem_4",
+        "command": "-emacs-mcx.backwardParagraph",
+        "when": "editorTextFocus && !config.emacs-mcx.useMetaPrefixMacCmd && !suggestWidgetVisible"
+    },
+    {
+        "key": "alt+i",
+        "command": "emacs-mcx.backwardParagraph",
+        "when": "config.emacs-mcx.useMetaPrefixMacCmd && editorTextFocus && !suggestWidgetVisible"
+    },
+    {
+        "key": "shift+alt+oem_4",
+        "command": "-emacs-mcx.backwardParagraph",
+        "when": "config.emacs-mcx.useMetaPrefixMacCmd && editorTextFocus && !suggestWidgetVisible"
+    },
+    {
+        "key": "ctrl+alt+n",
+        "command": "emacs-mcx.isearchForwardRegexp",
+        "when": "!config.emacs-mcx.useMetaPrefixMacCmd && !findInputFocussed"
+    },
+    {
+        "key": "ctrl+alt+s",
+        "command": "-emacs-mcx.isearchForwardRegexp",
+        "when": "!config.emacs-mcx.useMetaPrefixMacCmd && !findInputFocussed"
+    },
+    {
+        "key": "ctrl+alt+n",
+        "command": "emacs-mcx.isearchForwardRegexp",
+        "when": "config.emacs-mcx.useMetaPrefixMacCmd && !findInputFocussed"
+    },
+    {
+        "key": "ctrl+alt+s",
+        "command": "-emacs-mcx.isearchForwardRegexp",
+        "when": "config.emacs-mcx.useMetaPrefixMacCmd && !findInputFocussed"
+    },
+    {
+        "key": "ctrl+alt+p",
+        "command": "emacs-mcx.isearchBackwardRegexp",
+        "when": "!config.emacs-mcx.useMetaPrefixMacCmd && !findInputFocussed"
+    },
+    {
+        "key": "ctrl+alt+r",
+        "command": "-emacs-mcx.isearchBackwardRegexp",
+        "when": "!config.emacs-mcx.useMetaPrefixMacCmd && !findInputFocussed"
+    },
+    {
+        "key": "ctrl+alt+p",
+        "command": "emacs-mcx.isearchBackwardRegexp",
+        "when": "config.emacs-mcx.useMetaPrefixMacCmd && !findInputFocussed"
+    },
+    {
+        "key": "ctrl+alt+r",
+        "command": "-emacs-mcx.isearchBackwardRegexp",
+        "when": "config.emacs-mcx.useMetaPrefixMacCmd && !findInputFocussed"
+    },
+    {
+        "key": "ctrl+n",
+        "command": "editor.action.nextMatchFindAction",
+        "when": "findInputFocussed"
+    },
+    {
+        "key": "ctrl+s",
+        "command": "-editor.action.nextMatchFindAction",
+        "when": "findInputFocussed"
+    },
+    {
+        "key": "ctrl+p",
+        "command": "editor.action.previousMatchFindAction",
+        "when": "findInputFocussed"
+    },
+    {
+        "key": "ctrl+r",
+        "command": "-editor.action.previousMatchFindAction",
+        "when": "findInputFocussed"
+    },
+]
