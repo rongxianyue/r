@@ -1,0 +1,17 @@
+{
+    "workbench.startupEditor": "none",
+    "editor.formatOnSave": true,
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "security.workspace.trust.untrustedFiles": "open",
+    "vscode-edge-devtools.webhintInstallNotification": true,
+    "update.showReleaseNotes": false,
+    "window.titleBarStyle": "custom",
+    "window.customMenuBarAltFocus": false,
+    "redhat.telemetry.enabled": true,
+    "editor.wordWrap": "on",
+    "editor.fontFamily": "'Consolas', 'Courier New', monospace",
+    "git.autofetch": true,
+    "workbench.iconTheme": "material-icon-theme"
+}
