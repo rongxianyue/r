@@ -1,0 +1,37 @@
+C-h backward-char			5 move-beginning-of-line
+C-l forward-char			11 delete-char
+C-k previous-line			kill-region
+C-j next-line				6 isearch-forward
+;C-q move-beginning-of-line		quoted-insert
+C-n isearch-forward			4 next-line
+C-p isearch-backward			3 previous-line
+C-v yank				9 scroll-up-command
+C-f scroll-up-command			2 forward-char
+C-b scroll-down-command			15 forward-word
+;C-r delete-char				6 isearch-backward
+;M-r kill-word				13 move-to-window-line-top-bottom
+M-l move-to-window-line-top-bottom	downcase-word
+M-h backward-word
+M-l forward-word
+M-v yank-pop
+C-y kill-region
+C-j                                     electric-newline-and-maybe-indent
+
+(global-set-key (kbd "C-h") 'backward-char)
+(global-set-key (kbd "C-l") 'forward-char)
+(global-set-key (kbd "M-k") 'previous-line)
+(global-set-key (kbd "M-j") 'next-line)
+(global-set-key (kbd "C-q") 'move-beginning-of-line)
+(global-set-key (kbd "C-n") 'isearch-forward)
+(global-set-key (kbd "C-p") 'isearch-backward)
+(global-set-key (kbd "C-y") 'kill-region)
+(global-set-key (kbd "M-y") 'kill-ring-save)
+(global-set-key (kbd "C-v") 'yank)
+(global-set-key (kbd "M-v") 'yank-pop)
+(global-set-key (kbd "C-f") 'scroll-up-command)
+(global-set-key (kbd "C-r") 'delete-char)
+(global-set-key (kbd "C-b") 'scroll-down-command)
+(global-set-key (kbd "M-k") 'backward-word)
+(global-set-key (kbd "M-j") 'forward-word)
+(global-set-key (kbd "M-r") 'kill-word)
+(global-set-key (kbd "M-l") 'move-to-window-line-top-bottom)
