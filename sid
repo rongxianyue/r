@@ -91,7 +91,12 @@ sudo sysctl -p
 sudo chmod 755 /usr/share/fonts/yahei/*
 sudo fc-cache -fv
 echo $XDG_SESSION_TYPE
+
+git config --global user.name 'rongxianyue'
+git config --global user.email 'rongxianyue@.com'
+git config --global core.editor emacs
 ssh-keygen -t rsa -b 4096
+ssh -T git@github.com
 
 gpg --full-generate-key
 gpg --list-secret-keys --keyid-format=long
