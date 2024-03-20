@@ -265,7 +265,7 @@
     </keybind>
     <keybind key="A-F3">
       <action name="Execute">
-        <command>gnome-terminal --full-screen --hide-menubar</command>
+        <command>qterminal</command>
       </action>
     </keybind>
     <keybind key="S-F7">
