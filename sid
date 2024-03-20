@@ -63,41 +63,43 @@ fb:2345:wait:/usr/sbin/fbset -a 1024x768-75
 /usr/bin/xcalib -invert -alter
 xdotool search --sync --onlyvisible --class "Firefox" windowactivate key F11
 echo 300 | sudo tee -a /sys/class/backlight/intel_backlight/brightness
-/dev/nvme0n1p3 /c              ntfs    defaults,umask=007,gid=46 0       0
 nmcli device wifi
 nmcli device wifi connect ChinaNGB-YdLmtU password awhu2373
-im-switch -s ibus
 echo $XDG_SESSION_TYPE
 /etc/default/keyboard or in /etc/default/console-setup
 XKBOPTIONS="ctrl:swapcaps"
 sudo dpkg-reconfigure -phigh console-setup
 (dumpkeys | grep keymaps; echo "keycode 29 = Caps_Lock";echo "keycode 58 = Control") | loadkeys
-~/.emacs.d/rime/build/luna_pinyin.schema.yaml reset: 1
-~/.config/ibus/rime/build/luna_pinyin_simp.schema.yaml
+
 131.253.33.219 edge.microsoft.com
 131.253.33.219 msedgeextensions.sf.tlu.dl.delivery.mp.microsoft.com
-http://vscode.cdn.azure.cn
-sudo dpkg --add-architecture i386
 amixer sset Master 50%
 amixer sset Master 10%+
 amixer sset Master mute
 amixer sset Master unmute
+https://raw.hellogithub.com/hosts
+/dev/nvme0n1p3 /c              ntfs    defaults,umask=007,gid=46 0       0
+echo $XDG_SESSION_TYPE
+http://vscode.cdn.azure.cn
+sudo dpkg --add-architecture i386
+~/.emacs.d/rime/build/luna_pinyin.schema.yaml reset: 1
+~/.config/ibus/rime/build/luna_pinyin_simp.schema.yaml
+im-switch -s ibus
 
 qterminal rate
 60 cat /proc/sys/vm/swappiness
 /etc/sysctl.conf
 vm.swappiness=10
 sudo sysctl -p
+
 sudo chmod 755 /usr/share/fonts/yahei/*
 sudo fc-cache -fv
-echo $XDG_SESSION_TYPE
 
 git config --global user.name 'rongxianyue'
-git config --global user.email 'rongxianyue@.com'
+git config --global user.email 'rongxianyue@'
 git config --global core.editor emacs
 ssh-keygen -t rsa -b 4096
 ssh -T git@github.com
-
 gpg --full-generate-key
 gpg --list-secret-keys --keyid-format=long
 gpg --armor --export  269A2414C004BBD9
