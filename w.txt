@@ -1,4 +1,6 @@
 irm https://massgrave.dev/get | iex
+运行wsreset命令，清空应用商店的缓存
+https://api.wemod.com/client/channels/stable/releases/latest
 
 任务栏置顶
 HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\StuckRects3
@@ -56,10 +58,6 @@ wsl --list --online
 wsl --install -d Debian
 wsl --unregister Debian
 ubuntu2204.exe config --default-user r
-
-https://api.wemod.com/client/download
-https://storage-cdn.wemod.com/app/releases/stable/WeMod-8.2.0.exe
-https://api.wemod.com/client/channels/stable/releases/latest
 
 安装hyper-v  .bat
 pushd "%~dp0"
