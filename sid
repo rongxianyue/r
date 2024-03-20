@@ -98,6 +98,8 @@ sudo fc-cache -fv
 git config --global user.name 'rongxianyue'
 git config --global user.email 'rongxianyue@'
 git config --global core.editor emacs
+git remote -v
+git remote add r git@github.com:rongxianyue/r.git
 ssh-keygen -t rsa -b 4096
 ssh -T git@github.com
 gpg --full-generate-key
